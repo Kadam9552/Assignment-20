@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flex box</title>
+    <style>
+         .item{
+        height: 190px;
+        width: 150px;
+        margin: 4px;
+        border-radius: 5px;
+        border: double 4px black;
+       }
+        .container{
+            height: 235px;
+            width: 800px;
+            display: flex;
+            background-color:#ccffee;
+            padding: 18px;
+            border-radius: 10px;
+        }
+        .container1{
+            height: 235px;
+            width: 1000px;
+            display: flex;
+            background-color:#ccffee;
+            padding: 18px;
+            border-radius: 10px;
+            flex-direction: row;
+            justify-content: end;
+        }
+        .container2{
+            height: 310px;
+            width: 900px;
+            display: flex;
+            background-color:#ccffee;
+            padding: 18px;
+            border-radius: 10px;
+            flex-direction:row-reverse;
+            align-items:end;
+            justify-content: start;
+        }
+        .container3{
+            height: 600px;
+            width: 500px;
+            display: flex;
+            background-color:#ccffee;
+            padding: 20px;
+            border-radius: 10px;
+            flex-direction:column;
+            flex-wrap: wrap;
+            align-items:center;
+        }
+        .container4{
+            height: 1200px;
+            width: 600px;
+            display: flex;
+            background-color:#ccffee;
+            padding: 20px;
+            border-radius: 10px;
+            flex-direction:column-reverse;
+            justify-content:space-around;
+            align-items: start;
+        }
+      
+    </style>
+</head>
+<body>
+    <h1> FlexBox</h1>
+    <div class="container">
+        <img src="rose.jpg" class="item">
+        <img src="lilly.jpg" class="item">
+        <img src="hibiscus.jpg" class="item">
+        <img src="lotus.jpg" class="item">
+        <img src="sunflower.jpg" class="item">
+    </div>
+
+    <h1> flex-direction: row and  justify-content: end </h1>
+    <div class="container1">
+        <img src="rose.jpg" class="item">
+        <img src="lilly.jpg" class="item">
+        <img src="hibiscus.jpg" class="item">
+       <img src="lotus.jpg" class="item">
+       <img src="sunflower.jpg" class="item">
+        
+    </div>
+
+    <h1> flex-direction: row-reverse ,justify-content: start and align-items:end</h1>
+    <div class="container2">
+        <img src="rose.jpg" class="item">
+        <img src="lilly.jpg" class="item">
+        <img src="hibiscus.jpg" class="item">
+        <img src="lotus.jpg" class="item">
+        <img src="sunflower.jpg" class="item">
+    </div>
+
+    <h1> flex-direction: column , flex-wrap: wrap and align-items:center </h1>
+    <div class="container3">
+        <img src="rose.jpg" class="item">
+        <img src="lilly.jpg" class="item">
+        <img src="hibiscus.jpg" class="item">
+        <img src="lotus.jpg" class="item">
+        <img src="sunflower.jpg" class="item">
+    </div>
+    <h1> flex-direction: column-reverse ,justify-content: space-around and align-items:start;</h1>
+    <div class="container4">
+        <img src="rose.jpg" class="item">
+        <img src="lilly.jpg" class="item">
+        <img src="hibiscus.jpg" class="item">
+        <img src="lotusgy.jpg" class="item">
+        <img src="sunflower.jpg" class="item">
+    </div>
+
+</body>
+</html>
